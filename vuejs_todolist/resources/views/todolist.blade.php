@@ -36,7 +36,7 @@
 </head>
 
 <body>
-
+    <h1 class="text-center">TodoList VueJS</h1>
 
     <div class="container">
         <div id="app">
@@ -83,12 +83,13 @@
                         <table class="table table-striped table-bordered">
                             <tbody>
                                 <tr v-for="item in data_list">
-                                    <td>@{{ item.content }}
+                                    <td>@{{ item.content }}</td>
+                                        <td style="float: right">
                                         <a href="javascript:;" @click="editData(item.id)"
-                                            class="btn btn-primary">Edit</a>
+                                            class="btn btn-secondary">Edit</a>
                                         <a href="javascript:;" @click="deleteData(item.id)"
-                                            class="btn btn-danger">Delete</a>
-                                    </td>
+                                            class="btn btn-danger">Delete</a></td>
+                                    
                                 </tr>
                                 <tr v-if="!data_list.length">
                                     <td>Data masih kosong</td>
