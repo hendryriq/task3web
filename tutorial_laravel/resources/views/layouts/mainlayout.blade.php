@@ -25,7 +25,7 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/student">Students</a>
+                        <a class="nav-link" href="/students">Students</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-disabled="" href="/class">Class</a>
@@ -37,10 +37,12 @@
                         <a class="nav-link" aria-disabled="" href="/teacher">Teacher</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                </ul>
+                
             </div>
         </div>
     </nav>

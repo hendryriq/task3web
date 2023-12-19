@@ -6,6 +6,10 @@
 <h1>Halaman Detail Student</h1>
 {{-- {{$student}} --}}
 
+
+<div class="my-3 d-flex justify-content-center">
+   <img src="{{asset('storage/photo/'.$student->image)}}" alt="" width="150px">
+</div>
 <div class="mt-5">
 <table class="table table-bordered">
    <tr>
